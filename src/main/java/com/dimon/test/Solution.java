@@ -33,8 +33,9 @@ public class Solution {
 
     }
 
-    private int maxValue = Integer.MIN_VALUE;
+    public int maxValue = Integer.MIN_VALUE;
     public void findMaxPr(LinkedHashMap<String, Object> json) {
+        maxValue = Integer.MIN_VALUE;
         ArrayList<String> currentStack = new ArrayList<>();
         ArrayList<String> maxStack = new ArrayList<>();
         findMax(json,0, currentStack, maxStack);
